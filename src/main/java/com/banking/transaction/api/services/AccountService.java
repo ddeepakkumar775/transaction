@@ -39,7 +39,7 @@ public class AccountService {
 		CodeGenerator codeGenerator = new CodeGenerator();
 		Account newAccount = new Account();
 		newAccount.setBankName(bankName);
-		newAccount.setBankName(ownerName);
+		newAccount.setOwnerName(ownerName);
 		newAccount.setSortCode(codeGenerator.generateSortCode());
 		newAccount.setAccountNumber(codeGenerator.generateAccountNumber());
 		newAccount.setCurrentBalance(0.00);

@@ -5,8 +5,7 @@ import com.banking.transaction.api.constants.BankingAppConstants;
 public class InputValidator {
 
 	public static boolean isSearchCriteriaValid(AccountInput accountInput) {
-		return BankingAppConstants.SORT_CODE_PATTERN.matcher(accountInput.getSortCode()).find()
-				&& BankingAppConstants.ACCOUNT_NUMBER_PATTERN.matcher(accountInput.getAccountNumber()).find();
+		return BankingAppConstants.ACCOUNT_NUMBER_PATTERN.matcher(accountInput.getAccountNumber()).find();
 	}
 
 	public static boolean isAccountNoValid(String accountNo) {

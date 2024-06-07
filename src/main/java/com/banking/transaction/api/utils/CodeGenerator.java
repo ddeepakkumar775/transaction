@@ -8,12 +8,12 @@ public class CodeGenerator {
 	}
 
 	public String generateSortCode() {
-		int nextInt = new Random().nextInt(5);
+		int nextInt = new Random().nextInt(99999999);
 		return String.valueOf(nextInt);
 	}
 
 	public String generateAccountNumber() {
-		int nextInt = new Random().nextInt(10);
+		int nextInt = new Random().nextInt(99999999);
 		return String.valueOf(nextInt);
 	}
 
